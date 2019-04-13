@@ -22,7 +22,7 @@ class DCT:
             for n in range(0, N):
                 self.x[k][n] = round(Ak * cos(2 * pi * fk * n + phase), 4 ) #Arredonda em 4 casas decimais
                 sinal[n] += self.x[k][n]
-            print(self.x[k])
+            #print(self.x[k])
         return sinal
 
     #realiza a soma de todos os elementos do vetor
@@ -32,4 +32,4 @@ class DCT:
             for n in range(0, len(vetor)):
                 soma += self.x[k][n]
             print("{} -> {}".format(k, soma))
-        return soma
+        return
